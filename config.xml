@@ -54,11 +54,6 @@
 <preference name="Fullscreen" value="false"/>
 <preference name="Orientation" value="default"/>
 </platform>
-<splash platform="android" src="package-assets/640x480.png" density="hdpi" width="640" height="480" orientation="landscape"/>
-<splash platform="android" src="package-assets/320x426.png" density="ldpi" width="320" height="426" orientation="portrait"/>
-<splash platform="android" src="package-assets/426x320.png" density="ldpi" width="426" height="320" orientation="landscape"/>
-<splash platform="ios" src="package-assets/320x480.png" width="320" height="480" orientation="portrait"/>
-<splash platform="ios" src="package-assets/1024x768.png" width="1024" height="768" orientation="landscape"/>
 <icon platform="android" src="package-assets/36x36.png" density="ldpi" width="36" height="36"/>
 <icon platform="android" src="package-assets/96x96.png" density="xhdpi" width="96" height="96"/>
 <icon platform="ios" src="package-assets/29x29.png" width="29" height="29"/>
