@@ -13,7 +13,7 @@
 <allow-intent href="http://*"/>
 <allow-navigation href="http://*"/>
 <access origin="http://*"/>
-<preference name="phonegap-version" value="cli-6.2.0" />
+<preference name="phonegap-version" value="cli-6.5.0" />
 <preference name="xwalkMultipleApk" value="false" />
 <plugin name="cordova-plugin-crosswalk-webview" spec="1.8.0"/>
 <plugin name="cordova-plugin-whitelist" spec="1.2.2"/>
@@ -50,7 +50,7 @@
 <platform name="ios" >
 <preference name="exit-on-suspend" value="false"/>
 <preference name="deployment-target" value="8.0"/>
-<preference name="ios-configuration" value="production"/>
+<preference name="ios-configuration" value="adhock"/>
 <preference name="Fullscreen" value="false"/>
 <preference name="Orientation" value="default"/>
 </platform>
