@@ -1,0 +1,116 @@
+/*
+ * Copyright (c) 2012, Intel Corporation. All rights reserved.
+ * File revision: 15 October 2012
+ * Please see http://software.intel.com/html5/license/samples 
+ * and the included README.md file for license terms and conditions.
+ */
+
+
+body {
+    background: #fff !important;
+}
+
+h2 {
+    white-space: normal !important;
+}
+/* ensure background takes up entire screen */
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 5px 0 !important;
+    padding: 5px 0 !important;
+}
+h1, h2, h3, h4, h5 {
+    color: #27629C !important;
+}
+.storiesbtn{
+    width:80%;
+    padding:10px;
+    margin:auto !important;
+    text-decoration: none;
+    font-weight: bold;
+}
+.menumore{
+    text-decoration: none;
+}
+.menu {
+    max-height:
+}
+.img, img{
+    max-width: 100%;
+}
+
+.content_refresh{
+     position: fixed;
+     width: 100%;
+     padding: 5px !important;
+     margin: 0px !important;
+    background: #fff !important;
+    color: #000 !important;
+ 
+}
+.content_div{
+     position: fixed;
+     width: 100%;
+     padding: 5px !important;
+     margin: 0px !important;
+    background: #fff !important;
+    color: #000 !important;
+    overflow: auto;
+ 
+}
+
+.logo {
+    max-width: 70%; 
+    max-height: 100px;
+    margin:auto;
+}
+
+.ui-body-c, .ui-overlay-c {
+    text-shadow: none;
+}
+.ui-title {
+    color: #fff;
+    margin: .6em 20% .8em;
+}
+.details_div{
+    margin-bottom:40px;
+}
+.details_title1{
+    padding: 10px;
+}
+.ui-header {
+    background: #fff;
+    border: 0px;
+    border-bottom: 2px solid #000;
+    text-align: center;
+}
+.ui-li-divider > .ui-li-heading{
+    color: #fff;
+}
+
+.ui-btn-up-b{
+    background: #fff; /*#c10404;*/
+    color: #fff;
+    text-shadow: none;
+    border: 0;
+}
+.ui-btn-hover-b{
+    background: #fff;
+    color: #000;
+    border: 0;
+}
+.ui-btn-text{
+    text-shadow: none;
+}
+.ui-btn-text img{
+    max-height:50px;
+}
+.ui-block-row{
+    margin: 5px 0;
+}
+.news-title{
+    text-decoration: none;
+    
+}

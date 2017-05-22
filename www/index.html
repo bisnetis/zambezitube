@@ -1,19 +1,180 @@
 <!DOCTYPE html>
-<html>
 <head>
-    <title>ZambeziTube</title>
+    <title>ZambeziTube | Fishing, adventure and wildlife videos</title>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-
-    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <style>
-
-        @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
-        @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+        @-ms-viewport { width: 100vw ; zoom: 100% ; }  @viewport { width: 100vw ; zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; }           @viewport { user-zoom: fixed ; }
     </style>
-    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="vendor/jquery.mobile/jquery.mobile-1.1.1.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    
+
+    <script type='text/javascript' src="xdk/init-dev.js"></script>
+    
+    <script type="text/javascript" src="vendor/jquery/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="app/config.js"></script>
+    <script type="text/javascript" src="vendor/jquery.mobile/jquery.mobile-1.1.1.min.js"></script>
+    <script type='text/javascript' src='js/jquery.p2r.min.js'></script>
+    <script type='text/javascript' src="js/script.js"></script> 
+    <!--<script type='text/javascript' src="cordova.js"></script>-->
 </head>
 
 <body>
-    Loading...
+    <div data-role="page" id="home">
+        <!-- header -->
+        <div class="header" data-role="header" data-id="tabnav-header" data-position="fixed" data-theme="b">
+            <img src="images/logo.png" class="logo">
+        </div>
+        <!-- content -->
+        <div data-role="content" class="contentdiv" id="news_div">
+            <p><img src="images/welcome.png"></p>
+            <h2>ZambeziTube showcases fishing and adventure safari videos from us, our suppliers and clients.</h2>
+            <p><img src="images/tfz-featured-video.png"></p>
+            <p><a href='#video' class='video featured_video' data-poster='' data-src='' data-title=''><img src='' width='100%' style='max-height:380px; margin: auto;'></a></p>
+        </div>
+        <!-- footer -->
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-iconpos="left">
+                <ul>
+                    <li><a href="#fishing" id="fishing_btn" class="menu" data-type="fishing" data-theme="b"><img src="images/tfz-categories-fishing.png"></a></li>
+                    <li><a href="#safari" id="safari_btn" class="menu" data-type="safari" data-theme="b"><img src="images/tfz-categories-safari.png"></a></li>
+                    <li><a href="#adventure" id="adventure_btn" class="menu" data-type="adventure" data-theme="b"><img src="images/tfz-categories-adventure.png"></a></li>
+                    <li><a href="#all" id="all_btn" class="menu" data-type="all" data-theme="b"><img src="images/tfz-categories-all.png"></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div data-role="page" id="fishing">
+        <!-- header -->
+        <div class="header" data-add-back-btn="true" data-role="header" data-id="tabnav-header" data-position="fixed" data-theme="b">
+            <a data-rel="back" data-icon="back" data-theme="c" class="back_button" data-iconpos="notext"></a>
+            <h1><img src="images/logo.png" class="logo"></h1>
+        </div>
+        <div data-role="content" class="contentdiv" id="fishing_div">
+            <h2 class="fishing_title">Fishing Videos</h2>
+            <div class="fishing_div">
+                <p>Loading Content...</p>
+            </div>
+        </div>
+        <!-- footer -->
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-iconpos="left">
+                <ul>
+                    <li><a href="#fishing" id="fishing_btn" class="menu" data-type="fishing" data-theme="b"><img src="images/tfz-categories-fishing.png"></a></li>
+                    <li><a href="#safari" id="safari_btn" class="menu" data-type="safari" data-theme="b"><img src="images/tfz-categories-safari.png"></a></li>
+                    <li><a href="#adventure" id="adventure_btn" class="menu" data-type="adventure" data-theme="b"><img src="images/tfz-categories-adventure.png"></a></li>
+                    <li><a href="#all" id="all_btn" class="menu" data-type="all" data-theme="b"><img src="images/tfz-categories-all.png"></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="safari">
+        <!-- header -->
+        <div class="header" data-add-back-btn="true" data-role="header" data-id="tabnav-header" data-position="fixed" data-theme="b">
+            <a data-rel="back" data-icon="back" data-theme="c" class="back_button" data-iconpos="notext"></a>
+            <h1><img src="images/logo.png" class="logo"></h1>
+        </div>
+        <div data-role="content" class="contentdiv" id="safari_div">
+            <h2 class="safari_title">Safari Videos</h2>
+            <div class="safari_div">
+                <p>Loading Content...</p>
+            </div>
+        </div>
+        <!-- footer -->
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-iconpos="left">
+                <ul>
+                    <li><a href="#fishing" id="fishing_btn" class="menu" data-type="fishing" data-theme="b"><img src="images/tfz-categories-fishing.png"></a></li>
+                    <li><a href="#safari" id="safari_btn" class="menu" data-type="safari" data-theme="b"><img src="images/tfz-categories-safari.png"></a></li>
+                    <li><a href="#adventure" id="adventure_btn" class="menu" data-type="adventure" data-theme="b"><img src="images/tfz-categories-adventure.png"></a></li>
+                    <li><a href="#all" id="all_btn" class="menu" data-type="all" data-theme="b"><img src="images/tfz-categories-all.png"></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="adventure">
+        <!-- header -->
+        <div class="header" data-add-back-btn="true" data-role="header" data-id="tabnav-header" data-position="fixed" data-theme="b">
+            <a data-rel="back" data-icon="back" data-theme="c" class="back_button" data-iconpos="notext"></a>
+            <h1><img src="images/logo.png" class="logo"></h1>
+        </div>
+        <div data-role="content" class="contentdiv" id="adventure_div">
+            <h2 class="adventure_title">Adventure Videos</h2>
+            <div class="adventure_div">
+                <p>Loading Content...</p>
+            </div>
+        </div>
+        <!-- footer -->
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-iconpos="left">
+                <ul>
+                    <li><a href="#fishing" id="fishing_btn" class="menu" data-type="fishing" data-theme="b"><img src="images/tfz-categories-fishing.png"></a></li>
+                    <li><a href="#safari" id="safari_btn" class="menu" data-type="safari" data-theme="b"><img src="images/tfz-categories-safari.png"></a></li>
+                    <li><a href="#adventure" id="adventure_btn" class="menu" data-type="adventure" data-theme="b"><img src="images/tfz-categories-adventure.png"></a></li>
+                    <li><a href="#all" id="all_btn" class="menu" data-type="all" data-theme="b"><img src="images/tfz-categories-all.png"></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="all">
+        <!-- header -->
+        <div class="header" data-add-back-btn="true" data-role="header" data-id="tabnav-header" data-position="fixed" data-theme="b">
+            <a data-rel="back" data-icon="back" data-theme="c" class="back_button" data-iconpos="notext"></a>
+            <h1><img src="images/logo.png" class="logo"></h1>
+        </div>
+        <div data-role="content" class="contentdiv" id="all_div">
+            <h2 class="all_title">All Videos</h2>
+            <div class="all_div">
+                <p>Loading Content...</p>
+            </div>
+        </div>
+        <!-- footer -->
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-iconpos="left">
+                <ul>
+                    <li><a href="#fishing" id="fishing_btn" class="menu" data-type="fishing" data-theme="b"><img src="images/tfz-categories-fishing.png"></a></li>
+                    <li><a href="#safari" id="safari_btn" class="menu" data-type="safari" data-theme="b"><img src="images/tfz-categories-safari.png"></a></li>
+                    <li><a href="#adventure" id="adventure_btn" class="menu" data-type="adventure" data-theme="b"><img src="images/tfz-categories-adventure.png"></a></li>
+                    <li><a href="#all" id="all_btn" class="menu" data-type="all" data-theme="b"><img src="images/tfz-categories-all.png"></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="video">
+        <!-- header -->
+        <div class="header" data-add-back-btn="true" data-role="header" data-id="tabnav-header" data-position="fixed" data-theme="b">
+            <a data-rel="back" data-icon="back" data-theme="c" class="back_button" data-iconpos="notext"></a>
+            <h1><img src="images/logo.png" class="logo"></h1>
+        </div>
+        <div data-role="content" class="contentdiv" id="video_div">
+            <h2 class="video_title">Title Here</h2>
+            <div class="video_div">
+                 <video id="main_video" width="100%" height="380" controls poster="http://www.zambezitube.tv/get_json.php?img=7881452962.jpg">
+                    <source id="video_src" src="http://www.zambezitube.tv/videos/7881452962.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video> 
+            </div>
+        </div>
+        <!-- footer -->
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-iconpos="left">
+                <ul>
+                    <li><a href="#fishing" id="fishing_btn" class="menu" data-type="fishing" data-theme="b"><img src="images/tfz-categories-fishing.png"></a></li>
+                    <li><a href="#safari" id="safari_btn" class="menu" data-type="safari" data-theme="b"><img src="images/tfz-categories-safari.png"></a></li>
+                    <li><a href="#adventure" id="adventure_btn" class="menu" data-type="adventure" data-theme="b"><img src="images/tfz-categories-adventure.png"></a></li>
+                    <li><a href="#all" id="all_btn" class="menu" data-type="all" data-theme="b"><img src="images/tfz-categories-all.png"></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
