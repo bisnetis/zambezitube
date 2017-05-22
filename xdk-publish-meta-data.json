@@ -1,15 +1,45 @@
 {
-  "categorization": {},
+  "categorization": {
+    "type": "APPLICATION",
+    "category": "Travel"
+  },
   "description": {
     "texts": {
-      "title": "",
-      "features": []
+      "title": "ZambeziTube",
+      "features": [
+        "view videos on Zambezi fishing"
+      ],
+      "short-description": "ZambeziTube showcases fishing and adventure safari videos",
+      "full-description": "ZambeziTube showcases fishing and adventure safari videos from us, our suppliers and clients.",
+      "keywords": "tiger fishing videos zambezi",
+      "recent-changes": "",
+      "privacy-policy": "",
+      "eula": ""
     },
     "images": {
-      "screenshots": []
+      "screenshots": [
+        "../../../../Downloads/shreenshot480.png",
+        "../../../../Downloads/shreenshot480.png",
+        "../../../../Downloads/shreenshot480.png"
+      ],
+      "app-icon-small": "../../../../Downloads/img114.png",
+      "app-icon": "../../../../Downloads/hires2.png",
+      "small-promo": "",
+      "large-promo": ""
     },
-    "videos": {}
+    "videos": {
+      "video-url": ""
+    }
   },
-  "packages": {},
-  "support": {}
+  "packages": {
+    "apk-file": "../../../../Downloads/zambezitube.cordova.android.201704255931.apk",
+    "zip-xdk-compliant": false,
+    "zip-file": "",
+    "secondary-apk-file": ""
+  },
+  "support": {
+    "email": "support@bisnet.co.za",
+    "website": "http://www.bisnet.co.za"
+  },
+  "testing-instructions": "First release of the ZambeziTube app"
 }
